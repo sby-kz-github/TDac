@@ -16,12 +16,12 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="lib" artifactName="${ProjName}D" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" description="" id="org.eclipse.cdt.msvc.lib.debug.1802825181" name="Debug" parent="org.eclipse.cdt.msvc.lib.debug" postannouncebuildStep="install lib Debug" postbuildStep="xcopy .\Debug\${ProjName}.lib .\lib">
+				<configuration artifactExtension="lib" artifactName="${ProjName}D" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" description="" errorParsers="org.eclipse.cdt.core.VCErrorParser" id="org.eclipse.cdt.msvc.lib.debug.1802825181" name="Debug" parent="org.eclipse.cdt.msvc.lib.debug" postannouncebuildStep="install lib Debug" postbuildStep="xcopy /Y ${ProjName}D.lib ..\lib; xcopy /Y *.pdb ..\lib" preannouncebuildStep="" prebuildStep="">
 					<folderInfo id="org.eclipse.cdt.msvc.lib.debug.1802825181." name="/" resourcePath="">
-						<toolChain id="org.eclipse.cdt.msvc.toolchain.lib.debug.989747727" name="Microsoft Visual C++" superClass="org.eclipse.cdt.msvc.toolchain.lib.debug">
-							<targetPlatform id="org.eclipse.cdt.msvc.targetPlatform.lib.debug.1521390076" superClass="org.eclipse.cdt.msvc.targetPlatform.lib.debug"/>
-							<builder buildPath="${workspace_loc:/TDacCore}/Debug" id="org.eclipse.cdt.msvc.builder.1848469128" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT 内部ビルダー" superClass="org.eclipse.cdt.msvc.builder"/>
-							<tool id="org.eclipse.cdt.msvc.cl.c.lib.debug.1835357900" name="C コンパイラー (cl)" superClass="org.eclipse.cdt.msvc.cl.c.lib.debug">
+						<toolChain errorParsers="" id="org.eclipse.cdt.msvc.toolchain.lib.debug.989747727" name="Microsoft Visual C++" superClass="org.eclipse.cdt.msvc.toolchain.lib.debug">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.PE" id="org.eclipse.cdt.msvc.targetPlatform.lib.debug.1521390076" superClass="org.eclipse.cdt.msvc.targetPlatform.lib.debug"/>
+							<builder buildPath="${workspace_loc:/TDacCore}/Debug" errorParsers="" id="org.eclipse.cdt.msvc.builder.1848469128" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT 内部ビルダー" superClass="org.eclipse.cdt.msvc.builder"/>
+							<tool command="cl /c" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.VCErrorParser" id="org.eclipse.cdt.msvc.cl.c.lib.debug.1835357900" name="C コンパイラー (cl)" superClass="org.eclipse.cdt.msvc.cl.c.lib.debug">
 								<option id="org.eclipse.cdt.msvc.cl.option.optimization.1287957786" name="Optimization" superClass="org.eclipse.cdt.msvc.cl.option.optimization" value="org.eclipse.cdt.msvc.cl.option.optimization.default" valueType="enumerated"/>
 								<option id="org.eclipse.cdt.msvc.cl.option.debugFormat.1436253770" name="Debug Information Format" superClass="org.eclipse.cdt.msvc.cl.option.debugFormat" value="org.eclipse.cdt.msvc.cl.option.debugFormat.complete" valueType="enumerated"/>
 								<option id="org.eclipse.cdt.msvc.cl.option.includes.1446528275" name="インクルード・パス (/I)" superClass="org.eclipse.cdt.msvc.cl.option.includes" valueType="includePath">
@@ -29,7 +29,7 @@
 								</option>
 								<inputType id="org.eclipse.cdt.msvc.cl.inputType.c.1125191732" superClass="org.eclipse.cdt.msvc.cl.inputType.c"/>
 							</tool>
-							<tool id="org.eclipse.cdt.msvc.cl.lib.debug.793269850" name="C++ コンパイラー (cl)" superClass="org.eclipse.cdt.msvc.cl.lib.debug">
+							<tool command="cl /c" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.VCErrorParser" id="org.eclipse.cdt.msvc.cl.lib.debug.793269850" name="C++ コンパイラー (cl)" superClass="org.eclipse.cdt.msvc.cl.lib.debug">
 								<option id="org.eclipse.cdt.msvc.cl.option.optimization.1929246996" name="Optimization" superClass="org.eclipse.cdt.msvc.cl.option.optimization" value="org.eclipse.cdt.msvc.cl.option.optimization.default" valueType="enumerated"/>
 								<option id="org.eclipse.cdt.msvc.cl.option.debugFormat.2081218443" name="Debug Information Format" superClass="org.eclipse.cdt.msvc.cl.option.debugFormat" value="org.eclipse.cdt.msvc.cl.option.debugFormat.complete" valueType="enumerated"/>
 								<option id="org.eclipse.cdt.msvc.cl.option.includes.1526530950" name="インクルード・パス (/I)" superClass="org.eclipse.cdt.msvc.cl.option.includes" valueType="includePath">
@@ -37,13 +37,13 @@
 								</option>
 								<inputType id="org.eclipse.cdt.msvc.cl.inputType.1307889611" superClass="org.eclipse.cdt.msvc.cl.inputType"/>
 							</tool>
-							<tool id="org.eclipse.cdt.msvc.rc.lib.debug.1538956972" name="リソース・コンパイラー (rc)" superClass="org.eclipse.cdt.msvc.rc.lib.debug">
+							<tool command="rc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.VCErrorParser" id="org.eclipse.cdt.msvc.rc.lib.debug.1538956972" name="リソース・コンパイラー (rc)" superClass="org.eclipse.cdt.msvc.rc.lib.debug">
 								<inputType id="org.eclipse.cdt.msvc.rc.inputType.1306078549" superClass="org.eclipse.cdt.msvc.rc.inputType"/>
 							</tool>
 							<tool id="org.eclipse.cdt.msvc.link.1968035201" name="Linker (link)" superClass="org.eclipse.cdt.msvc.link">
 								<option id="org.eclipse.cdt.msvc.link.option.debug.1371172018" name="Generate Debug Info (/debug)" superClass="org.eclipse.cdt.msvc.link.option.debug" value="true" valueType="boolean"/>
 							</tool>
-							<tool id="org.eclipse.cdt.msvc.lib.lib.debug.32491010" name="Library Manager (lib)" superClass="org.eclipse.cdt.msvc.lib.lib.debug"/>
+							<tool command="lib" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="" id="org.eclipse.cdt.msvc.lib.lib.debug.32491010" name="Library Manager (lib)" superClass="org.eclipse.cdt.msvc.lib.lib.debug"/>
 						</toolChain>
 					</folderInfo>
 				</configuration>
@@ -65,7 +65,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="lib" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" description="" id="org.eclipse.cdt.msvc.lib.release.986118888" name="Release" parent="org.eclipse.cdt.msvc.lib.release" postannouncebuildStep="install lib Release" postbuildStep="XCOPY .\Release\${ProjName}.lib .\lib" prebuildStep="">
+				<configuration artifactExtension="lib" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" description="" id="org.eclipse.cdt.msvc.lib.release.986118888" name="Release" parent="org.eclipse.cdt.msvc.lib.release" postannouncebuildStep="install lib Release" postbuildStep="xcopy /Y ${ProjName}.lib ..\lib" prebuildStep="">
 					<folderInfo id="org.eclipse.cdt.msvc.lib.release.986118888." name="/" resourcePath="">
 						<toolChain id="org.eclipse.cdt.msvc.toolchain.lib.release.1003181209" name="Microsoft Visual C++" superClass="org.eclipse.cdt.msvc.toolchain.lib.release">
 							<targetPlatform id="org.eclipse.cdt.msvc.targetPlatform.lib.release.2027634502" superClass="org.eclipse.cdt.msvc.targetPlatform.lib.release"/>
