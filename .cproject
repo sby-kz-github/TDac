@@ -24,11 +24,17 @@
 							<tool id="org.eclipse.cdt.msvc.cl.c.lib.debug.1835357900" name="C コンパイラー (cl)" superClass="org.eclipse.cdt.msvc.cl.c.lib.debug">
 								<option id="org.eclipse.cdt.msvc.cl.option.optimization.1287957786" name="Optimization" superClass="org.eclipse.cdt.msvc.cl.option.optimization" value="org.eclipse.cdt.msvc.cl.option.optimization.default" valueType="enumerated"/>
 								<option id="org.eclipse.cdt.msvc.cl.option.debugFormat.1436253770" name="Debug Information Format" superClass="org.eclipse.cdt.msvc.cl.option.debugFormat" value="org.eclipse.cdt.msvc.cl.option.debugFormat.complete" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.msvc.cl.option.includes.1446528275" name="インクルード・パス (/I)" superClass="org.eclipse.cdt.msvc.cl.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TDacCore/include}&quot;"/>
+								</option>
 								<inputType id="org.eclipse.cdt.msvc.cl.inputType.c.1125191732" superClass="org.eclipse.cdt.msvc.cl.inputType.c"/>
 							</tool>
 							<tool id="org.eclipse.cdt.msvc.cl.lib.debug.793269850" name="C++ コンパイラー (cl)" superClass="org.eclipse.cdt.msvc.cl.lib.debug">
 								<option id="org.eclipse.cdt.msvc.cl.option.optimization.1929246996" name="Optimization" superClass="org.eclipse.cdt.msvc.cl.option.optimization" value="org.eclipse.cdt.msvc.cl.option.optimization.default" valueType="enumerated"/>
 								<option id="org.eclipse.cdt.msvc.cl.option.debugFormat.2081218443" name="Debug Information Format" superClass="org.eclipse.cdt.msvc.cl.option.debugFormat" value="org.eclipse.cdt.msvc.cl.option.debugFormat.complete" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.msvc.cl.option.includes.1526530950" name="インクルード・パス (/I)" superClass="org.eclipse.cdt.msvc.cl.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TDacCore/include}&quot;"/>
+								</option>
 								<inputType id="org.eclipse.cdt.msvc.cl.inputType.1307889611" superClass="org.eclipse.cdt.msvc.cl.inputType"/>
 							</tool>
 							<tool id="org.eclipse.cdt.msvc.rc.lib.debug.1538956972" name="リソース・コンパイラー (rc)" superClass="org.eclipse.cdt.msvc.rc.lib.debug">
@@ -67,11 +73,17 @@
 							<tool id="org.eclipse.cdt.msvc.cl.c.lib.release.2087580692" name="C コンパイラー (cl)" superClass="org.eclipse.cdt.msvc.cl.c.lib.release">
 								<option id="org.eclipse.cdt.msvc.cl.option.optimization.786604292" name="Optimization" superClass="org.eclipse.cdt.msvc.cl.option.optimization"/>
 								<option id="org.eclipse.cdt.msvc.cl.option.debugFormat.1534203495" name="Debug Information Format" superClass="org.eclipse.cdt.msvc.cl.option.debugFormat"/>
+								<option id="org.eclipse.cdt.msvc.cl.option.includes.363560664" name="インクルード・パス (/I)" superClass="org.eclipse.cdt.msvc.cl.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TDacCore/include}&quot;"/>
+								</option>
 								<inputType id="org.eclipse.cdt.msvc.cl.inputType.c.535718126" superClass="org.eclipse.cdt.msvc.cl.inputType.c"/>
 							</tool>
 							<tool id="org.eclipse.cdt.msvc.cl.lib.release.295374595" name="C++ コンパイラー (cl)" superClass="org.eclipse.cdt.msvc.cl.lib.release">
 								<option id="org.eclipse.cdt.msvc.cl.option.optimization.1048604463" name="Optimization" superClass="org.eclipse.cdt.msvc.cl.option.optimization"/>
 								<option id="org.eclipse.cdt.msvc.cl.option.debugFormat.1904910390" name="Debug Information Format" superClass="org.eclipse.cdt.msvc.cl.option.debugFormat"/>
+								<option id="org.eclipse.cdt.msvc.cl.option.includes.1656074643" name="インクルード・パス (/I)" superClass="org.eclipse.cdt.msvc.cl.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TDacCore/include}&quot;"/>
+								</option>
 								<inputType id="org.eclipse.cdt.msvc.cl.inputType.1854511962" superClass="org.eclipse.cdt.msvc.cl.inputType"/>
 							</tool>
 							<tool id="org.eclipse.cdt.msvc.rc.lib.release.161553532" name="リソース・コンパイラー (rc)" superClass="org.eclipse.cdt.msvc.rc.lib.release">
@@ -89,15 +101,6 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="TDacCore.org.eclipse.cdt.msvc.projectType.lib.1188410093" name="static ライブラリー" projectType="org.eclipse.cdt.msvc.projectType.lib"/>
 	</storageModule>
-	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.lib.debug.1802825181;org.eclipse.cdt.msvc.lib.debug.1802825181.;org.eclipse.cdt.msvc.cl.lib.debug.793269850;org.eclipse.cdt.msvc.cl.inputType.1307889611">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.lib.debug.1802825181;org.eclipse.cdt.msvc.lib.debug.1802825181.;org.eclipse.cdt.msvc.cl.c.lib.debug.1835357900;org.eclipse.cdt.msvc.cl.inputType.c.1125191732">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo"/>
-		</scannerConfigBuildInfo>
-	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
 		<configuration configurationName="Release">
@@ -108,4 +111,19 @@
 		</configuration>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.lib.debug.1802825181;org.eclipse.cdt.msvc.lib.debug.1802825181.;org.eclipse.cdt.msvc.cl.lib.debug.793269850;org.eclipse.cdt.msvc.cl.inputType.1307889611">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.lib.release.986118888;org.eclipse.cdt.msvc.lib.release.986118888.;org.eclipse.cdt.msvc.cl.lib.release.295374595;org.eclipse.cdt.msvc.cl.inputType.1854511962">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.lib.debug.1802825181;org.eclipse.cdt.msvc.lib.debug.1802825181.;org.eclipse.cdt.msvc.cl.c.lib.debug.1835357900;org.eclipse.cdt.msvc.cl.inputType.c.1125191732">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.lib.release.986118888;org.eclipse.cdt.msvc.lib.release.986118888.;org.eclipse.cdt.msvc.cl.c.lib.release.2087580692;org.eclipse.cdt.msvc.cl.inputType.c.535718126">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
 </cproject>
