@@ -9,7 +9,8 @@
 #include "TreeList.h"
 
 
-TreeList::TreeList()
+TreeList::TreeList() :
+mParent(NULL)
 {
 }
 
@@ -17,11 +18,34 @@ TreeList::~TreeList()
 {
 }
 
-bool TreeList::AddChild(TreeList &child)
+bool TreeList::AddChild(TreeList *child)
 {
+	TreeList *ch_parent = child->GetParent();
+	if(NULL != ch_parent)
+	{
+		ch_parent->RemoveChild(child);
+	}
+
+	child->SetParent(this);
+
 	mTreeList.push_back(child);
 	return true;
 }
+
+TreeList* TreeList::RemoveChild(TreeList *child)
+{
+	std::list<TreeList*>::iterator it;
+	for(it = mTreeList.begin(); it != mTreeList.end(); it++){
+		if((*it) == child)
+		{
+			(*it)->SetParent(NULL);
+			mTreeList.remove(*it);
+			return *it;
+		}
+	}
+	return NULL;
+}
+
 
 void TreeList::DumpPrint(int depth)
 {
@@ -31,10 +55,10 @@ void TreeList::DumpPrint(int depth)
 	}
 	printf("Node\n");
 
-
-	std::list<TreeList>::iterator it = mTreeList.begin();
-	while(it != mTreeList.end()){
-		it->DumpPrint(depth + 1);
+	std::list<TreeList*>::iterator it;
+	for(it = mTreeList.begin(); it != mTreeList.end(); it++)
+	{
+		(*it)->DumpPrint(depth + 1);
 		it++;
 	}
 }

@@ -17,12 +17,19 @@ public:
 	TreeList();
 	virtual ~TreeList();
 
-	bool AddChild(TreeList &child);
+	TreeList* GetParent(){ return mParent; }
 
-	void DumpPrint(int depth=0);
+	bool      AddChild(TreeList *child);
+	TreeList* RemoveChild(TreeList *child);
+
+	void      DumpPrint(int depth=0);
 
 private:
-	std::list<TreeList>  mTreeList;
+	void      SetParent(TreeList* parent){ mParent = parent; }
+
+private:
+	TreeList *mParent;
+	std::list<TreeList*>  mTreeList;
 };
 
 #endif /* TREELIST_H_ */
