@@ -5,7 +5,6 @@
  *      Author: sby_kz
  */
 
-#include "stdio.h"
 #include "TreeList.h"
 
 
@@ -20,7 +19,7 @@ TreeList::~TreeList()
 
 bool TreeList::AddChild(TreeList *child)
 {
-	TreeList *ch_parent = child->GetParent();
+	TreeList* ch_parent = child->GetParent();
 	if(NULL != ch_parent)
 	{
 		ch_parent->RemoveChild(child);
@@ -44,21 +43,4 @@ TreeList* TreeList::RemoveChild(TreeList *child)
 		}
 	}
 	return NULL;
-}
-
-
-void TreeList::DumpPrint(int depth)
-{
-	for(int i=0; i<depth; i++)
-	{
-		printf(" ");
-	}
-	printf("Node\n");
-
-	std::list<TreeList*>::iterator it;
-	for(it = mTreeList.begin(); it != mTreeList.end(); it++)
-	{
-		(*it)->DumpPrint(depth + 1);
-		it++;
-	}
 }

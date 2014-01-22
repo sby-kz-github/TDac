@@ -9,7 +9,6 @@
 #define TREELIST_H_
 
 #include <list>
-#include "stdio.h"
 
 class TreeList
 {
@@ -17,12 +16,11 @@ public:
 	TreeList();
 	virtual ~TreeList();
 
-	TreeList* GetParent(){ return mParent; }
+	TreeList*               GetParent(){ return mParent; }
+	std::list<TreeList*>*   GetChild() { return &mTreeList;}
 
 	bool      AddChild(TreeList *child);
 	TreeList* RemoveChild(TreeList *child);
-
-	void      DumpPrint(int depth=0);
 
 private:
 	void      SetParent(TreeList* parent){ mParent = parent; }
